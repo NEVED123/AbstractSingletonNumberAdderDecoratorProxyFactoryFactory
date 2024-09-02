@@ -15,6 +15,7 @@ class Main {
     }
 }
 
+// This obviously isn't "industry grade" addition on its own, not enough abstraction...
 class BoringOldAdder {
     public int add(int a, int b) {
         return a + b;
@@ -83,7 +84,7 @@ class ConcreteAdder extends NumberAdder{
     //Proxy: A representation of a class that takes its "full form" when required at runtime, usually to avoid the overhead of creating a lot of a large objects at once.
     @Override
     public void load() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(5); // We can get rid of this before the next retrospective so the manager sees improvement in code performance 
+        TimeUnit.SECONDS.sleep(5); // We can get rid of this before the next retrospective meeting so the manager sees improvement in code performance 
         loaded = true;
     }
 
